@@ -79,3 +79,20 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .education-container, .exprience-container, .portfolio-container, .blog-container, .testimonial-wrapper, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Set the access key in JavaScript
+    const accessKey = "7ada0929-e2ec-4c2d-bff1-5b11bd9dae16"; // Replace with your actual Web3Forms access key
+    
+    // Set the access key for the main contact form
+    const mainAccessKeyInput = document.getElementById("contactAccessKey");
+    if (mainAccessKeyInput) {
+      mainAccessKeyInput.value = accessKey;
+    }
+  
+    // Optional: Set the access key for other forms (e.g., footer)
+    const footerAccessKeyInput = document.getElementById("footerContactAccessKey");
+    if (footerAccessKeyInput) {
+      footerAccessKeyInput.value = accessKey;
+    }
+  });
